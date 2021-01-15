@@ -226,88 +226,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/13/JavaNote01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar1.jpg">
-      <meta itemprop="name" content="luckyyi">
-      <meta itemprop="description" content="继续坚持一下下啦！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="哒哒代码屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/12/13/JavaNote01/" class="post-title-link" itemprop="url">Java学习笔记（一）Java编程基础</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-12-13 20:12:54" itemprop="dateCreated datePublished" datetime="2020-12-13T20:12:54+08:00">2020-12-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-15 16:45:48" itemprop="dateModified" datetime="2021-01-15T16:45:48+08:00">2021-01-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Java编程基础"><a href="#Java编程基础" class="headerlink" title="Java编程基础"></a>Java编程基础</h1><h2 id="JVM工作原理及跨平台原理"><a href="#JVM工作原理及跨平台原理" class="headerlink" title="JVM工作原理及跨平台原理"></a>JVM工作原理及跨平台原理</h2><h3 id="JVM工作原理"><a href="#JVM工作原理" class="headerlink" title="JVM工作原理"></a>JVM工作原理</h3><p><img src="./%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B.png" alt="Alt text"><br><img src="./JVM%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B.png" alt="Alt text"></p>
-<h3 id="Java跨平台原理"><a href="#Java跨平台原理" class="headerlink" title="Java跨平台原理"></a>Java跨平台原理</h3><p><img src="./Java%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%8E%9F%E7%90%86.png" alt="Alt text"></p>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 单行注释</span><br><span class="line"></span><br><span class="line">&#x2F;*</span><br><span class="line">	多行注释</span><br><span class="line">*&#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;**</span><br><span class="line">	文档注释</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
-<h2 id="主函数传参"><a href="#主函数传参" class="headerlink" title="主函数传参"></a>主函数传参</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String [] args)&#123;</span><br><span class="line">	&#x2F;&#x2F;主函数args如何接受参数？</span><br><span class="line">	&#x2F;&#x2F;在java.exe 解释时空格传参： java Demo2 a b (运行时将a b传入到了args中)</span><br><span class="line">	System.out.println(args[0]);&#x2F;&#x2F;a</span><br><span class="line">	System.out.println(args[1]);&#x2F;&#x2F;b</span><br><span class="line">	System.out.println(args)&#x2F;&#x2F;数组地址：[Ljava.lang.String;@15db9742</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="常用常量"><a href="#常用常量" class="headerlink" title="常用常量"></a>常用常量</h2><ol>
-<li>数值常量</li>
-<li>字符常量（符号： ‘’）</li>
-<li>字符串常量 （符号： “”）</li>
-<li>布尔常量 true false<h2 id="变量数据类型"><a href="#变量数据类型" class="headerlink" title="变量数据类型"></a>变量数据类型</h2><h3 id="八大数据类型"><a href="#八大数据类型" class="headerlink" title="八大数据类型"></a>八大数据类型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;* 整数 (长度) 默认值：0</span><br><span class="line">		字节 byte  -128~127  （无符号范围256）</span><br><span class="line">		短整型 short  -32768~32767  （无符号范围65535）</span><br><span class="line">		整型 int  -2147483648~2147483647 (java中的整数默认是int)</span><br><span class="line">		长整型 long </span><br><span class="line">	浮点数(精度长度) 默认值：0.0</span><br><span class="line">		单精度浮点型 float</span><br><span class="line">		双精度浮点型 double S (java中的小数默认是double)</span><br><span class="line">	字符型 char (character字符)	默认值&#39;\u0000&#39; 字符空格</span><br><span class="line">	布尔型 boolean (取值范围 true&#x2F;false), 默认值false</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
-<h3 id="数据类型选择-所占字节大小"><a href="#数据类型选择-所占字节大小" class="headerlink" title="数据类型选择(所占字节大小)"></a>数据类型选择(所占字节大小)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*</span><br><span class="line">	1byte :  btye  boolean</span><br><span class="line">	2byte:  short  char</span><br><span class="line">	4byte: int float</span><br><span class="line">	8byte: long double</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
-<h3 id="特殊规则"><a href="#特殊规则" class="headerlink" title="特殊规则"></a>特殊规则</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*</span><br><span class="line">	1. float类型定义时，需要在数据后加F&#x2F;f</span><br><span class="line">	2. long类型定义时，需要在数据后加L&#x2F;l（推荐用大写，小写和数字1易混）</span><br><span class="line">*&#x2F;</span><br><span class="line">&#x2F;&#x2F; java 中默认采用的编码是unicode编码(前128位就是ASCII)</span><br><span class="line">&#x2F;&#x2F; ASCII : 美国标准信息交换码 0~127</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="变量的定义规范"><a href="#变量的定义规范" class="headerlink" title="变量的定义规范"></a>变量的定义规范</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String [] args)&#123;</span><br><span class="line">	&#x2F;&#x2F; 1.java中定义变量的语法： 数据类型  变量名 &#x3D; 值;</span><br><span class="line">	int a; &#x2F;&#x2F;变量的声明（在栈中开辟一块int类型占4byte大小的空间）</span><br><span class="line">	a &#x3D; 1; &#x2F;&#x2F;变量的初始化（赋值）(别名需要在可用范围内唯一：地址唯一)</span><br><span class="line">	</span><br><span class="line">	&#x2F;&#x2F; 2. 将以上步骤合并： 变量的声明及赋值</span><br><span class="line">	int b &#x3D; 123; &#x2F;&#x2F;变量名不允许重复： 地址别名不能重复</span><br><span class="line">	int x,y,z; &#x2F;&#x2F;开辟了三个连续空间</span><br><span class="line">	&#x2F;&#x2F;重点：未初始化的变量不能直接使用</span><br><span class="line">	</span><br><span class="line">	&#x2F;&#x2F; 3.变量名（标识符）的命名规范</span><br><span class="line">	&#x2F;*</span><br><span class="line">		1. 变量由数字，字母，下划线，$来组成</span><br><span class="line">		2. 不能以数字开头 </span><br><span class="line">		3. 变量名满足驼峰式写法</span><br><span class="line">			大驼峰：每个单词的首字母都大写  TestDemo [类名，接口，枚举]</span><br><span class="line">			小驼峰：第一个单词首字母小写，剩余的其他单词首字母都大写 （变量）</span><br><span class="line">		4. 大小写敏感 apple APPLE</span><br><span class="line">		5. 变量一定要见名知意 gender birthday year findByName</span><br><span class="line">	*&#x2F;</span><br></pre></td></tr></table></figure>
-
-
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/13/Java01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -359,6 +277,88 @@
 <li>classpath变量的路径最后加上;号则如未在所设置的路径找到class文件，会在当前目录下寻找</li>
 <li>直接删除classpath变量</li>
 </ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/13/JavaNote01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar1.jpg">
+      <meta itemprop="name" content="luckyyi">
+      <meta itemprop="description" content="继续坚持一下下啦！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="哒哒代码屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/13/JavaNote01/" class="post-title-link" itemprop="url">Java学习笔记（一）Java编程基础</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-13 20:12:54" itemprop="dateCreated datePublished" datetime="2020-12-13T20:12:54+08:00">2020-12-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-01-15 16:59:14" itemprop="dateModified" datetime="2021-01-15T16:59:14+08:00">2021-01-15</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="JVM工作原理"><a href="#JVM工作原理" class="headerlink" title="JVM工作原理"></a>JVM工作原理</h1><p><img src="https://upload-images.jianshu.io/upload_images/2248230-8eada784c65192b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编译过程.png"><br><img src="https://upload-images.jianshu.io/upload_images/2248230-a290b8d202dfa476.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="JVM工作流程.png"></p>
+<h1 id="Java跨平台原理"><a href="#Java跨平台原理" class="headerlink" title="Java跨平台原理"></a>Java跨平台原理</h1><p><img src="https://upload-images.jianshu.io/upload_images/2248230-6c5b913426d9bd8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Java跨平台原理.png"></p>
+<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 单行注释</span><br><span class="line"></span><br><span class="line">&#x2F;*</span><br><span class="line">	多行注释</span><br><span class="line">*&#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;**</span><br><span class="line">	文档注释</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
+<h1 id="主函数传参"><a href="#主函数传参" class="headerlink" title="主函数传参"></a>主函数传参</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String [] args)&#123;</span><br><span class="line">	&#x2F;&#x2F;主函数args如何接受参数？</span><br><span class="line">	&#x2F;&#x2F;在java.exe 解释时空格传参： java Demo2 a b (运行时将a b传入到了args中)</span><br><span class="line">	System.out.println(args[0]);&#x2F;&#x2F;a</span><br><span class="line">	System.out.println(args[1]);&#x2F;&#x2F;b</span><br><span class="line">	System.out.println(args)&#x2F;&#x2F;数组地址：[Ljava.lang.String;@15db9742</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="常用常量"><a href="#常用常量" class="headerlink" title="常用常量"></a>常用常量</h1><ol>
+<li>数值常量</li>
+<li>字符常量（符号： ‘’）</li>
+<li>字符串常量 （符号： “”）</li>
+<li>布尔常量 true false<h1 id="变量数据类型"><a href="#变量数据类型" class="headerlink" title="变量数据类型"></a>变量数据类型</h1><h2 id="八大数据类型"><a href="#八大数据类型" class="headerlink" title="八大数据类型"></a>八大数据类型</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;* 整数 (长度) 默认值：0</span><br><span class="line">		字节 byte  -128~127  （无符号范围256）</span><br><span class="line">		短整型 short  -32768~32767  （无符号范围65535）</span><br><span class="line">		整型 int  -2147483648~2147483647 (java中的整数默认是int)</span><br><span class="line">		长整型 long </span><br><span class="line">	浮点数(精度长度) 默认值：0.0</span><br><span class="line">		单精度浮点型 float</span><br><span class="line">		双精度浮点型 double S (java中的小数默认是double)</span><br><span class="line">	字符型 char (character字符)	默认值&#39;\u0000&#39; 字符空格</span><br><span class="line">	布尔型 boolean (取值范围 true&#x2F;false), 默认值false</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
+<h2 id="数据类型选择-所占字节大小"><a href="#数据类型选择-所占字节大小" class="headerlink" title="数据类型选择(所占字节大小)"></a>数据类型选择(所占字节大小)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*</span><br><span class="line">	1byte :  btye  boolean</span><br><span class="line">	2byte:  short  char</span><br><span class="line">	4byte: int float</span><br><span class="line">	8byte: long double</span><br><span class="line">*&#x2F;</span><br></pre></td></tr></table></figure>
+<h2 id="特殊规则"><a href="#特殊规则" class="headerlink" title="特殊规则"></a>特殊规则</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;*</span><br><span class="line">	1. float类型定义时，需要在数据后加F&#x2F;f</span><br><span class="line">	2. long类型定义时，需要在数据后加L&#x2F;l（推荐用大写，小写和数字1易混）</span><br><span class="line">*&#x2F;</span><br><span class="line">&#x2F;&#x2F; java 中默认采用的编码是unicode编码(前128位就是ASCII)</span><br><span class="line">&#x2F;&#x2F; ASCII : 美国标准信息交换码 0~127</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h1 id="变量的定义规范"><a href="#变量的定义规范" class="headerlink" title="变量的定义规范"></a>变量的定义规范</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String [] args)&#123;</span><br><span class="line">	&#x2F;&#x2F; 1.java中定义变量的语法： 数据类型  变量名 &#x3D; 值;</span><br><span class="line">	int a; &#x2F;&#x2F;变量的声明（在栈中开辟一块int类型占4byte大小的空间）</span><br><span class="line">	a &#x3D; 1; &#x2F;&#x2F;变量的初始化（赋值）(别名需要在可用范围内唯一：地址唯一)</span><br><span class="line">	</span><br><span class="line">	&#x2F;&#x2F; 2. 将以上步骤合并： 变量的声明及赋值</span><br><span class="line">	int b &#x3D; 123; &#x2F;&#x2F;变量名不允许重复： 地址别名不能重复</span><br><span class="line">	int x,y,z; &#x2F;&#x2F;开辟了三个连续空间</span><br><span class="line">	&#x2F;&#x2F;重点：未初始化的变量不能直接使用</span><br><span class="line">	</span><br><span class="line">	&#x2F;&#x2F; 3.变量名（标识符）的命名规范</span><br><span class="line">	&#x2F;*</span><br><span class="line">		1. 变量由数字，字母，下划线，$来组成</span><br><span class="line">		2. 不能以数字开头 </span><br><span class="line">		3. 变量名满足驼峰式写法</span><br><span class="line">			大驼峰：每个单词的首字母都大写  TestDemo [类名，接口，枚举]</span><br><span class="line">			小驼峰：第一个单词首字母小写，剩余的其他单词首字母都大写 （变量）</span><br><span class="line">		4. 大小写敏感 apple APPLE</span><br><span class="line">		5. 变量一定要见名知意 gender birthday year findByName</span><br><span class="line">	*&#x2F;</span><br></pre></td></tr></table></figure>
+
+
+
 
       
     </div>
